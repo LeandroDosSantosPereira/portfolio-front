@@ -17,6 +17,11 @@ export class SkillComponent implements OnInit {
     focus;
     focus1;
 
+	// Paginate
+	page = 4;
+    page1 = 5;
+    page2 = 3;
+
   constructor() { }
 
   ngOnInit() {
