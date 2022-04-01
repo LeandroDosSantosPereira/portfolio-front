@@ -10,16 +10,18 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { BlogComponent } from './examples/blog/blog.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { SkillComponent } from './examples/skill/skill.component';
+import { ProjectComponent } from './examples/project/project.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
+    { path: '', redirectTo: 'profile', pathMatch: 'full' },
+    { path: 'profile',             component: ProfileComponent },
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent },
     { path: 'examples/blog',     component:  BlogComponent},
-    { path: 'examples/skill',     component:  SkillComponent}
+    { path: 'examples/skill',     component:  SkillComponent},
+    { path: 'examples/project',     component:  ProjectComponent}
 ];
 
 @NgModule({
