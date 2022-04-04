@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="team">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4" (click)="open(classic,'' , '')">
 						<div class="team-player">
 							<img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="rounded img-fluid img-raised">
 							<h4 class="title">Romina Hadid</h4>
@@ -81,3 +81,21 @@
 	</div>
 	<!-- paginação -->
 </div>
+
+
+<!-- modal -->
+<button class="btn btn-primary" (click)="open(classic,'' , '')">
+	Launch Modal
+</button>
+<ng-template #classic let-c="close" let-d="dismiss">
+	<div class="modal-header justify-content-center">
+		<button type="button" class="close" (click)="d('Cross click')">
+			<i class="now-ui-icons ui-1_simple-remove"></i>
+		</button>
+		<h4 class="title title-up">Modal title</h4>
+	</div>
+	<div class="modal-body">
+		<img class="d-block blog_image" src="assets/img/bg1.jpg">
+	</div>
+</ng-template>
+<!-- modal -->
